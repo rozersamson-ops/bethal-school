@@ -1,0 +1,6 @@
+{
+  "name": "Bethel School of Music",
+  "description": "Official website for Bethel School of Music in Ooty, offering premium music training in piano, keyboard, guitar, violin, drums, flute, and vocal, affiliated with Trinity College London and ABRSM.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

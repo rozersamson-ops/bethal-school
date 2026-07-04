@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght=0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", "Cinzel", serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  /* Attractive Light Music Theme: Vibrant Gold, Neon Pink, Electric Teal accents */
+  --color-gold-50: #FCF6FF;
+  --color-gold-100: #F6EAFF;
+  --color-gold-200: #E6C5FF;
+  --color-gold-300: #C280FF;
+  --color-gold-400: #FF007F; /* Luminous pink signature */
+  --color-gold-500: #FF007F; /* Neon Pink pop */
+  --color-gold-600: #FF8F00; /* Rich sunset orange-gold */
+  --color-gold-700: #00D2B4; /* Electric turquoise accent */
+  --color-gold-800: #6200EE; /* Royal Violet */
+  --color-gold-900: #3700B3; /* Deep Beats Indigo */
+  --color-gold-950: #09001D;
+
+  /* Premium High-Contrast Light Theme */
+  --color-slate-50: #09031C; /* Heading color */
+  --color-slate-100: #09031C; /* Heading color (replaces white text) */
+  --color-slate-150: #2E1A47; /* Deep body text */
+  --color-slate-200: #1B0C32; /* Rich dark plum text */
+  --color-slate-250: #423060; /* Medium body text */
+  --color-slate-300: #4B3A6E; /* Cool gray-plum text */
+  --color-slate-350: #5D4D80; /* Secondary copy text */
+  --color-slate-400: #6F6094; /* Soft details */
+  --color-slate-450: #8173A6; /* Subtle labels */
+  --color-slate-500: #9387B8; /* Muted badges */
+  --color-slate-600: #A69BCA; /* Borders active */
+  --color-slate-650: #B9AFDC; 
+  --color-slate-700: #CDC5ED;
+  --color-slate-800: #EFEAF7; /* Hover row/pad color (light violet) */
+  --color-slate-850: #E4DCF1; /* Sleek light purple border line */
+  --color-slate-900: #FFFFFF; /* Sleek pure white card background */
+  --color-slate-905: #FFFFFF; /* Sleek pure white card background */
+  --color-slate-950: #FAF9FC; /* Crisp radiant warm pearl-rose-lavender page background */
+}
+
+/* Custom scrollbar matching attractive Light Music theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF9FC;
+  border-left: 1px solid #E4DCF1;
+}
+::-webkit-scrollbar-thumb {
+  background: #E4DCF1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF007F;
+}
+
+/* Custom styles for glowing musical accents in light theme */
+.gold-text-glow {
+  text-shadow: 0 0 12px rgba(255, 0, 127, 0.25), 0 0 20px rgba(0, 210, 180, 0.15);
+}
+
+.gold-border-gradient {
+  border-color: #FF007F;
+  box-shadow: 0 0 16px rgba(255, 0, 127, 0.12);
+}
+
+.bg-pattern {
+  /* Colorful, clean light dotted grid with purple/indigo music energy */
+  background-image: radial-gradient(rgba(123, 44, 191, 0.08) 1.5px, transparent 0);
+  background-size: 24px 24px;
+  background-position: 0 0;
+}
+
+/* Music Visualizer Animation */
+@keyframes bounce-bar {
+  0%, 100% {
+    transform: scaleY(0.2);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.animate-bar-1 { animation: bounce-bar 0.8s ease-in-out infinite alternate; transform-origin: bottom; }
+.animate-bar-2 { animation: bounce-bar 0.5s ease-in-out infinite alternate; transform-origin: bottom; animation-delay: 0.15s; }
+.animate-bar-3 { animation: bounce-bar 1.1s ease-in-out infinite alternate; transform-origin: bottom; animation-delay: 0.3s; }
+.animate-bar-4 { animation: bounce-bar 0.7s ease-in-out infinite alternate; transform-origin: bottom; animation-delay: 0.05s; }
+.animate-bar-5 { animation: bounce-bar 0.9s ease-in-out infinite alternate; transform-origin: bottom; animation-delay: 0.25s; }
+.animate-bar-6 { animation: bounce-bar 0.6s ease-in-out infinite alternate; transform-origin: bottom; animation-delay: 0.2s; }
+
+
